@@ -12,13 +12,13 @@ function GitHubUser({ login }) {
       .then(res => res.json())
       .then(setData)
       .catch(console.error);
-  }, []);
+  });
 
   if (data) {
     return (
       <div>
         <h1>{data.login}</h1>
-        <img src={data.avatar_url} width={100} />
+        <img src={data.avatar_url} width={100} alt="profile" />
       </div>
     );
   }
