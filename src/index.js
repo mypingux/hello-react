@@ -26,7 +26,7 @@ function GitHubUser({ login }) {
 }
 
 function App() {
-  return <GitHubUser login="moontahoe" />;
+  return <GitHubUser login="mypingux" />;
 }
 
 ReactDOM.render(
